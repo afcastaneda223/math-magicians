@@ -1,0 +1,7 @@
+# Ignore dist folder
+
+/dist
+
+# Ignore coverage folder
+
+/coverage
