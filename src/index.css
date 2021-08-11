@@ -1,9 +1,10 @@
+/*remove number arrows from number form*/
+/*safari & chrome */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
@@ -16,7 +17,7 @@ input[type=number] {
 }
 
 .btn-warning:hover {
-  background-color: rgb(260, 160, 80);
+  background-color: rgb(226, 139, 56);
   border-color: rgb(209, 209, 209);
 }
 
@@ -27,7 +28,7 @@ input[type=number] {
 }
 
 .btn-light:hover {
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(215, 215, 215);
   border-color: rgb(209, 209, 209);
 }
 
