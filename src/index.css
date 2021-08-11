@@ -10,33 +10,35 @@ input[type=number] {
 }
 
 .btn-warning {
-  background-color: rgb(242,145,62);
-  border-color: rgb(209,209,209);
+  background-color: rgb(242, 145, 62);
+  border-color: rgb(209, 209, 209);
   border-radius: 0;
 }
-.btn-warning:hover{
+
+.btn-warning:hover {
   background-color: rgb(239, 136, 46);
-  border-color: rgb(209,209,209);
+  border-color: rgb(209, 209, 209);
 }
 
-.btn-light{
-  background-color: rgb(224,224,224);
-  border-color: rgb(209,209,209);
+.btn-light {
+  background-color: rgb(224, 224, 224);
+  border-color: rgb(209, 209, 209);
   border-radius: 0;
 }
-.btn-light:hover{
+
+.btn-light:hover {
   background-color: rgb(230, 230, 230);
-  border-color: rgb(209,209,209);
+  border-color: rgb(209, 209, 209);
 }
 
-.form-control{
-  background-color: rgb(133,134,148);
+.form-control {
+  background-color: rgb(133, 134, 148);
   border-radius: 0%;
-  border-color: rgb(209,209,209);
+  border-color: rgb(209, 209, 209);
 }
 
-.form-control:focus{
-  background-color: rgb(133,134,148);
-  border-color: rgb(209,209,209);
+.form-control:focus {
+  background-color: rgb(133, 134, 148);
+  border-color: rgb(209, 209, 209);
   box-shadow: none;
 }
