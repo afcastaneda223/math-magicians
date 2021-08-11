@@ -1,12 +1,16 @@
-import Calculator from './components/Calculator';
+import React, { Component } from 'react';
+import { Calculator } from './components/Calculator';
 
-function App() {
-  return (
-    <div className="container border border-4 mt-5">
-      <h1>Hello from React</h1>
-      <Calculator />
-    </div>
-  );
+class App extends Component {
+  btnCLass = 'hello from App'
+
+  render() {
+    return (
+      <div className="container mt-5">
+        <Calculator />
+      </div>
+    );
+  }
 }
 
 export default App;
