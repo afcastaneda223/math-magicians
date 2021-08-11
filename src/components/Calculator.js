@@ -10,20 +10,20 @@ export class Calculator extends React.Component {
   render() {
     return (
       <div className="container" id="CalculatorContainer">
-        <input type="number" id="InputNumber" className="form-control fw-bold fs-3 text-white text-end py-4" defaultValue="0" />
+        <input type="number" id="InputNumber" className="form-control fs-1 text-white text-end py-4" defaultValue="0" />
         <div className="row row-cols-4 container m-0 p-0">
           <button type="button" className={this.btnCLass.grey}>AC</button>
           <button type="button" className={this.btnCLass.grey}>+/-</button>
           <button type="button" className={this.btnCLass.grey}>%</button>
-          <button type="button" className={this.btnCLass.orange}>/</button>
+          <button type="button" className={this.btnCLass.orange}>÷</button>
           <button type="button" className={this.btnCLass.grey}>7</button>
           <button type="button" className={this.btnCLass.grey}>8</button>
           <button type="button" className={this.btnCLass.grey}>9</button>
-          <button type="button" className={this.btnCLass.orange}>*</button>
+          <button type="button" className={this.btnCLass.orange}>x</button>
           <button type="button" className={this.btnCLass.grey}>4</button>
           <button type="button" className={this.btnCLass.grey}>5</button>
           <button type="button" className={this.btnCLass.grey}>6</button>
-          <button type="button" className={this.btnCLass.orange}>+</button>
+          <button type="button" className={this.btnCLass.orange}>-</button>
           <button type="button" className={this.btnCLass.grey}>1</button>
           <button type="button" className={this.btnCLass.grey}>2</button>
           <button type="button" className={this.btnCLass.grey}>3</button>
