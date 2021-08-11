@@ -2,15 +2,15 @@ import React from 'react';
 
 export class Calculator extends React.Component {
   btnCLass = {
-    grey: 'btn btn-light col py-4',
-    orange: 'btn btn-warning col py-4',
-    zero: 'btn btn-light col-6 py-4',
+    grey: 'btn btn-light col py-lg-5 py-sm-4',
+    orange: 'btn btn-warning col py-lg-5 py-sm-4',
+    zero: 'btn btn-light col-6 py-lg-5 py-sm-4',
   }
 
   render() {
     return (
       <div className="container" id="CalculatorContainer">
-        <input type="number" id="InputNumber" className="form-control fs-1 text-white text-end py-4" defaultValue="0" />
+        <input type="number" id="InputNumber" className="form-control fs-1 text-white text-end py-lg-5 py-sm-4" defaultValue="0" />
         <div className="row row-cols-4 container m-0 p-0">
           <button type="button" className={this.btnCLass.grey}>AC</button>
           <button type="button" className={this.btnCLass.grey}>+/-</button>
