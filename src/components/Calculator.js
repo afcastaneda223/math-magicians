@@ -1,24 +1,34 @@
 /* eslint-disable class-methods-use-this */
 import React from 'react';
+import calculate from '../logic/calculate';
 // import calculate from '../logic/calculate';
 
 export class Calculator extends React.Component {
-  // constructor(total, next, operation) {
-  //   this.total = total,
-  //   this.next = next,
-  //   this.operation = operation;
-  // }
-  // getForm = document.getElementById('InputNumber')
-  // obj = {
-  //   total: null,
-  //   next: null,
-  //   operation: null,
-  // };
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+  }
+
   // onClick={calculate(this.obj, { ele })}
   // obj = new Calculator()
   onChangeHandler = (event) => {
     const getForm = document.getElementById('InputNumber');
-    getForm.value = event.target.name;
+    const obj = calculate(this.state, event.target.name);
+    this.setState(obj);
+    console.log(obj);
+    if (obj.next) {
+      getForm.value = obj.next;
+    } else if (obj.total) {
+      getForm.value = obj.total;
+    } else if (!obj.total && !obj.next && !obj.operation) {
+      getForm.value = null;
+    }
+    return true;
+  // mientras no sea accion imput lo que entre al form
   };
 
   BtnValues = (props) => {
