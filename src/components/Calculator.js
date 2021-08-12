@@ -1,5 +1,5 @@
 import React from 'react';
-// import calculate() from './logic/calculate';
+// import calculate from '../logic/calculate';
 
 export class Calculator extends React.Component {
   // constructor(total, next, operation) {
@@ -7,23 +7,38 @@ export class Calculator extends React.Component {
   //   this.next = next,
   //   this.operation = operation;
   // }
+  // getForm = document.getElementById('InputNumber')
+  // obj = {
+  //   total: null,
+  //   next: null,
+  //   operation: null,
+  // };
+  // onClick={calculate(this.obj, { ele })}
   // obj = new Calculator()
+  // a = calculate(0, +, 0)
+  handleSubmit(ele) {
+    console.log(ele);
+  }
 
   BtnValues = (props) => {
     const arr = [];
     props.name.forEach((ele) => {
       let btnConst = '0';
       if (ele === '0') {
-        btnConst = <button type="button" name={ele} key={ele} className="btn btn-light col-6 py-lg-5 py-sm-4">{ele}</button>;
+        btnConst = <button type="button" name={ele} onClickCapture={this.handleSubmit} key={ele} className="btn btn-light col-6 py-lg-5 py-sm-4">{ele}</button>;
       } else if (ele === '÷' || ele === 'x' || ele === '-' || ele === '+' || ele === '=') {
-        btnConst = <button type="button" name={ele} key={ele} className="btn btn-warning col py-lg-5 py-sm-4">{ele}</button>;
+        btnConst = <button type="button" name={ele} onClickCapture={this.handleSubmit} key={ele} className="btn btn-warning col py-lg-5 py-sm-4">{ele}</button>;
       } else {
-        btnConst = <button type="button" name={ele} key={ele} className="btn btn-light col py-lg-5 py-sm-4">{ele}</button>;
+        btnConst = <button type="button" name={ele} onClickCapture={this.handleSubmit} key={ele} className="btn btn-light col py-lg-5 py-sm-4">{ele}</button>;
       }
       arr.push(btnConst);
     });
     return arr;
   }
+
+  // populateForm(ele) {
+  //   this.getForm.value = ele;
+  // }
 
   render() {
     const arr = ['AC', '+/-', '%', '÷', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
