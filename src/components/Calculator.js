@@ -1,15 +1,13 @@
 import React from 'react';
+// import calculate() from './logic/calculate';
 
 export class Calculator extends React.Component {
-  // constructor(props) {
-  //   super(props);
+  // constructor(total, next, operation) {
+  //   this.total = total,
+  //   this.next = next,
+  //   this.operation = operation;
   // }
-  // getForm = document.getElementById('InputNumber').value
-  // obj = {
-  //   total: getForm
-  //   next:
-  //   operation:
-  // }
+  // obj = new Calculator()
 
   BtnValues = (props) => {
     const arr = [];
