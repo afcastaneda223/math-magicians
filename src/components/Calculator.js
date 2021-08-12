@@ -13,13 +13,10 @@ export class Calculator extends React.Component {
     };
   }
 
-  // onClick={calculate(this.obj, { ele })}
-  // obj = new Calculator()
   onChangeHandler = (event) => {
     const getForm = document.getElementById('InputNumber');
     const obj = calculate(this.state, event.target.name);
     this.setState(obj);
-    console.log(obj);
     if (obj.next) {
       getForm.value = obj.next;
     } else if (obj.total) {
@@ -28,7 +25,6 @@ export class Calculator extends React.Component {
       getForm.value = null;
     }
     return true;
-  // mientras no sea accion imput lo que entre al form
   };
 
   BtnValues = (props) => {
