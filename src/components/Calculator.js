@@ -1,36 +1,54 @@
+/* eslint-disable class-methods-use-this */
 import React from 'react';
+import calculate from '../logic/calculate';
 
 export class Calculator extends React.Component {
-  btnCLass = {
-    grey: 'btn btn-light col py-lg-5 py-sm-4',
-    orange: 'btn btn-warning col py-lg-5 py-sm-4',
-    zero: 'btn btn-light col-6 py-lg-5 py-sm-4',
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+  }
+
+  onChangeHandler = (event) => {
+    const getForm = document.getElementById('InputNumber');
+    const obj = calculate(this.state, event.target.name);
+    this.setState(obj);
+    if (obj.next) {
+      getForm.value = obj.next;
+    } else if (obj.total) {
+      getForm.value = obj.total;
+    } else if (!obj.total && !obj.next && !obj.operation) {
+      getForm.value = null;
+    }
+    return true;
+  };
+
+  BtnValues = (props) => {
+    const arr = [];
+    props.name.forEach((ele) => {
+      let btnConst = '0';
+      if (ele === '0') {
+        btnConst = <button type="button" name={ele} onClick={this.onChangeHandler} key={ele} className="btn btn-light col-6 py-lg-5 py-sm-4">{ele}</button>;
+      } else if (ele === '÷' || ele === 'x' || ele === '-' || ele === '+' || ele === '=') {
+        btnConst = <button type="button" name={ele} onClick={this.onChangeHandler} key={ele} className="btn btn-warning col py-lg-5 py-sm-4">{ele}</button>;
+      } else {
+        btnConst = <button type="button" name={ele} key={ele} onClick={this.onChangeHandler} className="btn btn-light col py-lg-5 py-sm-4">{ele}</button>;
+      }
+      arr.push(btnConst);
+    });
+    return arr;
   }
 
   render() {
+    const arr = ['AC', '+/-', '%', '÷', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
     return (
       <div className="container" id="CalculatorContainer">
-        <input type="number" id="InputNumber" className="form-control fs-1 text-white text-end py-lg-5 py-sm-4" defaultValue="0" />
+        <input type="text" id="InputNumber" className="form-control fs-1 text-white text-end py-lg-5 py-sm-4" />
         <div className="row row-cols-4 container m-0 p-0">
-          <button type="button" className={this.btnCLass.grey}>AC</button>
-          <button type="button" className={this.btnCLass.grey}>+/-</button>
-          <button type="button" className={this.btnCLass.grey}>%</button>
-          <button type="button" className={this.btnCLass.orange}>÷</button>
-          <button type="button" className={this.btnCLass.grey}>7</button>
-          <button type="button" className={this.btnCLass.grey}>8</button>
-          <button type="button" className={this.btnCLass.grey}>9</button>
-          <button type="button" className={this.btnCLass.orange}>x</button>
-          <button type="button" className={this.btnCLass.grey}>4</button>
-          <button type="button" className={this.btnCLass.grey}>5</button>
-          <button type="button" className={this.btnCLass.grey}>6</button>
-          <button type="button" className={this.btnCLass.orange}>-</button>
-          <button type="button" className={this.btnCLass.grey}>1</button>
-          <button type="button" className={this.btnCLass.grey}>2</button>
-          <button type="button" className={this.btnCLass.grey}>3</button>
-          <button type="button" className={this.btnCLass.orange}>+</button>
-          <button type="button" className={this.btnCLass.zero}>0</button>
-          <button type="button" className={this.btnCLass.grey}>.</button>
-          <button type="button" className={this.btnCLass.orange}>=</button>
+          <this.BtnValues name={arr} />
         </div>
       </div>
     );

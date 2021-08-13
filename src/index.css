@@ -19,8 +19,14 @@ input[type=number] {
 }
 
 .btn-warning:hover {
-  background-color: rgb(226, 139, 56);
+  background-color: rgb(234, 137, 54);
   border-color: rgb(209, 209, 209);
+}
+
+.btn-warning:focus {
+  background-color: rgb(234, 137, 54);
+  border-color: rgb(209, 209, 209);
+  box-shadow: none;
 }
 
 .btn-light {
@@ -32,6 +38,12 @@ input[type=number] {
 .btn-light:hover {
   background-color: rgb(215, 215, 215);
   border-color: rgb(209, 209, 209);
+}
+
+.btn-light:focus {
+  background-color: rgb(215, 215, 215);
+  border-color: rgb(209, 209, 209);
+  box-shadow: none;
 }
 
 .form-control {

@@ -3,6 +3,7 @@ import { Calculator } from './components/Calculator';
 
 class App extends Component {
   btnCLass = 'hello from App'
+  // getBtns = document.querySelectorAll('.btn').onclick
 
   render() {
     return (
