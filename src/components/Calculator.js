@@ -7,24 +7,24 @@ const Calculator = () => {
 
   const onChangeHandler = (event) => {
     const getForm = document.getElementById('InputNumber');
-    const obj = calculate(object, event.target.name);
+    let { total, next, operation } = calculate(object, event.target.name);
 
-    if (obj.total === undefined) {
-      obj.total = object.total;
+    if (total === undefined) {
+      total = object.total;
     }
-    if (obj.next === undefined) {
-      obj.next = object.next;
+    if (next === undefined) {
+      next = object.next;
     }
-    if (obj.operation === undefined) {
-      obj.operation = object.operation;
+    if (operation === undefined) {
+      operation = object.operation;
     }
 
-    setObject(obj);
-    if (obj.next) {
-      getForm.value = obj.next;
-    } else if (obj.total) {
-      getForm.value = obj.total;
-    } else if (!obj.total && !obj.next && !obj.operation) {
+    setObject({ total, next, operation });
+    if (next) {
+      getForm.value = next;
+    } else if (total) {
+      getForm.value = total;
+    } else if (!total && !next && !operation) {
       getForm.value = null;
     }
     return true;
