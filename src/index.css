@@ -23,7 +23,7 @@ input[type=number] {
   border-color: rgb(209, 209, 209);
 }
 
-.btn-warning:focus{
+.btn-warning:focus {
   background-color: rgb(234, 137, 54);
   border-color: rgb(209, 209, 209);
   box-shadow: none;

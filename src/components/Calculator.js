@@ -1,7 +1,6 @@
 /* eslint-disable class-methods-use-this */
 import React from 'react';
 import calculate from '../logic/calculate';
-// import calculate from '../logic/calculate';
 
 export class Calculator extends React.Component {
   constructor(props) {
