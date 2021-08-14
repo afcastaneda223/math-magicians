@@ -49,7 +49,7 @@ const Calculator = () => {
   const arr = ['AC', '+/-', '%', '÷', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
   return (
     <div className="container" id="CalculatorContainer">
-      <input type="text" id="InputNumber" className="form-control fs-1 text-white text-end py-lg-5 py-sm-4" defaultValue="0" />
+      <input type="text" id="InputNumber" className="form-control fs-1 text-white text-end py-lg-5 py-sm-4" />
       <div className="row row-cols-4 container m-0 p-0">
         <BtnValues name={arr} />
       </div>
