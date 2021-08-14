@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
-  const [object, setObject] = useState({ total: null, next: null, operation: null });
+  const [object, setObject] = useState({ total: '0', next: '0', operation: null });
 
   const onChangeHandler = (event) => {
     const getForm = document.getElementById('InputNumber');
@@ -27,7 +27,7 @@ const Calculator = () => {
     } else if (!total && !next && !operation) {
       getForm.value = null;
     }
-    return true;
+    setObject({ total, next, operation });
   };
 
   const BtnValues = (element) => {
@@ -49,7 +49,7 @@ const Calculator = () => {
   const arr = ['AC', '+/-', '%', '÷', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
   return (
     <div className="container" id="CalculatorContainer">
-      <input type="text" id="InputNumber" className="form-control fs-1 text-white text-end py-lg-5 py-sm-4" />
+      <input type="text" id="InputNumber" className="form-control fs-1 text-white text-end py-lg-5 py-sm-4" defaultValue="0" />
       <div className="row row-cols-4 container m-0 p-0">
         <BtnValues name={arr} />
       </div>
