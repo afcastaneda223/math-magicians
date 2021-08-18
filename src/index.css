@@ -11,12 +11,13 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
 body {
-  background: rgb(0,45,98);
+  background: rgb(0, 45, 98);
   color: rgb(209, 209, 209);
 }
 
-h1,h2 {
+h1, h2 {
   color: rgb(209, 209, 209);
 }
 
