@@ -21,8 +21,13 @@ h1 {
   color: rgb(209, 209, 209);
 }
 
-h2 {
+h3 {
   color: rgb(209, 209, 209);
+}
+
+.btn-dark:focus {
+  box-shadow: none;
+  border: rgb(33,37,41);
 }
 
 .btn-warning {
