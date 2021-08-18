@@ -27,7 +27,7 @@ h3 {
 
 .btn-dark:focus {
   box-shadow: none;
-  border: rgb(33,37,41);
+  border: rgb(33, 37, 41);
 }
 
 .btn-warning {
