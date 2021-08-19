@@ -12,6 +12,24 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+body {
+  background: rgb(0, 45, 98);
+  color: rgb(209, 209, 209);
+}
+
+h1 {
+  color: rgb(209, 209, 209);
+}
+
+h3 {
+  color: rgb(209, 209, 209);
+}
+
+.btn-dark:focus {
+  box-shadow: none;
+  border: rgb(33, 37, 41);
+}
+
 .btn-warning {
   background-color: rgb(242, 145, 62);
   border-color: rgb(209, 209, 209);
