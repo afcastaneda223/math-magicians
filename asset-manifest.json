@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/math-magicians/static/css/main.6674884d.chunk.css",
+    "main.js": "/math-magicians/static/js/main.c26c19bb.chunk.js",
+    "main.js.map": "/math-magicians/static/js/main.c26c19bb.chunk.js.map",
+    "runtime-main.js": "/math-magicians/static/js/runtime-main.59631596.js",
+    "runtime-main.js.map": "/math-magicians/static/js/runtime-main.59631596.js.map",
+    "static/js/2.da6337f2.chunk.js": "/math-magicians/static/js/2.da6337f2.chunk.js",
+    "static/js/2.da6337f2.chunk.js.map": "/math-magicians/static/js/2.da6337f2.chunk.js.map",
+    "index.html": "/math-magicians/index.html",
+    "static/css/main.6674884d.chunk.css.map": "/math-magicians/static/css/main.6674884d.chunk.css.map",
+    "static/js/2.da6337f2.chunk.js.LICENSE.txt": "/math-magicians/static/js/2.da6337f2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.59631596.js",
+    "static/js/2.da6337f2.chunk.js",
+    "static/css/main.6674884d.chunk.css",
+    "static/js/main.c26c19bb.chunk.js"
+  ]
+}
