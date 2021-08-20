@@ -7,7 +7,7 @@ describe('Button AC', () => {
     operation: null,
   };
   const obj2 = {
-    total: null,
+    total: '0',
     next: null,
     operation: null,
   };

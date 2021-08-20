@@ -69,7 +69,7 @@ describe('User interaction', () => {
     fireEvent.click(screen.queryByText('AC'));
 
     const display = screen.getByRole('textbox');
-    expect(display.value).toBe('');
+    expect(display.value).toBe('0');
   });
 
   it('Show numbers in display', () => {
