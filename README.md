@@ -5,12 +5,12 @@
 - Make simple calculations.
 - Read a random math-related quote.
 
-![screenshot](/)
+![screenshot](/calculator.pgn)
 
 
 ## Live-version
 
-[Live Version](https://afcastaneda223.github.io/math-magicians/)
+[Live Version](https://afcastaneda223.github.io/math-magicians/build)
 
 
 ## Built With
