@@ -5,7 +5,7 @@
 - Make simple calculations.
 - Read a random math-related quote.
 
-![screenshot](/calculator.pgn)
+![screenshot](/calculator.png)
 
 
 ## Live-version
