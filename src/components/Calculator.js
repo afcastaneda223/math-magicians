@@ -35,11 +35,11 @@ const Calculator = () => {
     element.name.forEach((ele) => {
       let btnConst = '0';
       if (ele === '0') {
-        btnConst = <button type="button" name={ele} onClick={onChangeHandler} key={ele} className="btn btn-light col-6 py-lg-5 py-sm-4">{ele}</button>;
+        btnConst = <button type="button" name={ele} onClick={onChangeHandler} key={ele} className="btn btn-light col-6 py-4">{ele}</button>;
       } else if (ele === '÷' || ele === 'x' || ele === '-' || ele === '+' || ele === '=') {
-        btnConst = <button type="button" name={ele} onClick={onChangeHandler} key={ele} className="btn btn-warning col py-lg-5 py-sm-4">{ele}</button>;
+        btnConst = <button type="button" name={ele} onClick={onChangeHandler} key={ele} className="btn btn-warning col py-4">{ele}</button>;
       } else {
-        btnConst = <button type="button" name={ele} key={ele} onClick={onChangeHandler} className="btn btn-light col py-lg-5 py-sm-4">{ele}</button>;
+        btnConst = <button type="button" name={ele} key={ele} onClick={onChangeHandler} className="btn btn-light col py-4">{ele}</button>;
       }
       arr.push(btnConst);
     });
@@ -48,12 +48,12 @@ const Calculator = () => {
 
   const arr = ['AC', '+/-', '%', '÷', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
   return (
-    <div className="row">
-      <div className="col-4">
+    <div className="row row-cols-1 row-cols-lg-2">
+      <div className="col text-center">
         <h1>Lets do some math!</h1>
       </div>
-      <div className="col-8">
-        <input type="text" id="InputNumber" className="form-control fs-1 text-white text-end py-lg-4 py-sm-3" />
+      <div className="col">
+        <input type="text" id="InputNumber" className="form-control fs-1 text-white text-end py-4" />
         <div className="row row-cols-4 container m-0 p-0">
           <BtnValues name={arr} />
         </div>
