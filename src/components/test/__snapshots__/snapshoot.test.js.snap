@@ -1,0 +1,314 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator Renders the Calculator 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-4"
+  >
+    <h1>
+      Lets do some math!
+    </h1>
+  </div>
+  <div
+    className="col-8"
+  >
+    <input
+      className="form-control fs-1 text-white text-end py-lg-4 py-sm-3"
+      id="InputNumber"
+      type="text"
+    />
+    <div
+      className="row row-cols-4 container m-0 p-0"
+    >
+      <button
+        className="btn btn-light col py-lg-5 py-sm-4"
+        name="AC"
+        onClick={[Function]}
+        type="button"
+      >
+        AC
+      </button>
+      <button
+        className="btn btn-light col py-lg-5 py-sm-4"
+        name="+/-"
+        onClick={[Function]}
+        type="button"
+      >
+        +/-
+      </button>
+      <button
+        className="btn btn-light col py-lg-5 py-sm-4"
+        name="%"
+        onClick={[Function]}
+        type="button"
+      >
+        %
+      </button>
+      <button
+        className="btn btn-warning col py-lg-5 py-sm-4"
+        name="÷"
+        onClick={[Function]}
+        type="button"
+      >
+        ÷
+      </button>
+      <button
+        className="btn btn-light col py-lg-5 py-sm-4"
+        name="7"
+        onClick={[Function]}
+        type="button"
+      >
+        7
+      </button>
+      <button
+        className="btn btn-light col py-lg-5 py-sm-4"
+        name="8"
+        onClick={[Function]}
+        type="button"
+      >
+        8
+      </button>
+      <button
+        className="btn btn-light col py-lg-5 py-sm-4"
+        name="9"
+        onClick={[Function]}
+        type="button"
+      >
+        9
+      </button>
+      <button
+        className="btn btn-warning col py-lg-5 py-sm-4"
+        name="x"
+        onClick={[Function]}
+        type="button"
+      >
+        x
+      </button>
+      <button
+        className="btn btn-light col py-lg-5 py-sm-4"
+        name="4"
+        onClick={[Function]}
+        type="button"
+      >
+        4
+      </button>
+      <button
+        className="btn btn-light col py-lg-5 py-sm-4"
+        name="5"
+        onClick={[Function]}
+        type="button"
+      >
+        5
+      </button>
+      <button
+        className="btn btn-light col py-lg-5 py-sm-4"
+        name="6"
+        onClick={[Function]}
+        type="button"
+      >
+        6
+      </button>
+      <button
+        className="btn btn-warning col py-lg-5 py-sm-4"
+        name="-"
+        onClick={[Function]}
+        type="button"
+      >
+        -
+      </button>
+      <button
+        className="btn btn-light col py-lg-5 py-sm-4"
+        name="1"
+        onClick={[Function]}
+        type="button"
+      >
+        1
+      </button>
+      <button
+        className="btn btn-light col py-lg-5 py-sm-4"
+        name="2"
+        onClick={[Function]}
+        type="button"
+      >
+        2
+      </button>
+      <button
+        className="btn btn-light col py-lg-5 py-sm-4"
+        name="3"
+        onClick={[Function]}
+        type="button"
+      >
+        3
+      </button>
+      <button
+        className="btn btn-warning col py-lg-5 py-sm-4"
+        name="+"
+        onClick={[Function]}
+        type="button"
+      >
+        +
+      </button>
+      <button
+        className="btn btn-light col-6 py-lg-5 py-sm-4"
+        name="0"
+        onClick={[Function]}
+        type="button"
+      >
+        0
+      </button>
+      <button
+        className="btn btn-light col py-lg-5 py-sm-4"
+        name="."
+        onClick={[Function]}
+        type="button"
+      >
+        .
+      </button>
+      <button
+        className="btn btn-warning col py-lg-5 py-sm-4"
+        name="="
+        onClick={[Function]}
+        type="button"
+      >
+        =
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Home Renders the Home 1`] = `
+<div
+  className="position-absolute top-50 start-50 translate-middle"
+>
+  <h1>
+    Welcome to my Calculator
+  </h1>
+  <h5
+    className="mt-5 text-justify"
+  >
+     
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum amet a maxime perferendis praesentium fugit illum quam saepe, omnis nisi delectus enim dolore unde nemo ab tempora quod earum minus iusto laborum! Omnis laudantium ex
+     
+  </h5>
+</div>
+`;
+
+exports[`Navbar Renders the Navbar 1`] = `
+Array [
+  <nav
+    className="navbar navbar-expand-lg navbar-dark bg-dark mb-5 sticky-top"
+  >
+    <div
+      className="container-fluid"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <button
+          className="btn btn-dark"
+          type="button"
+        >
+          <h1>
+            Math Magicians
+          </h1>
+        </button>
+      </a>
+      <button
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        className="navbar-toggler"
+        data-bs-target="#navbarSupportedContent"
+        data-bs-toggle="collapse"
+        type="button"
+      >
+        <span
+          className="navbar-toggler-icon"
+        />
+      </button>
+      <div
+        className="collapse navbar-collapse"
+        id="navbarSupportedContent"
+      >
+        <ul
+          className="navbar-nav me-auto mb-2 mb-lg-0 mx-auto pe-5"
+        >
+          <li
+            className="nav-item m-2"
+          >
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <button
+                className="btn btn-dark"
+                type="button"
+              >
+                <h3>
+                  Home
+                </h3>
+              </button>
+            </a>
+          </li>
+          <li
+            className="nav-item m-2"
+          >
+            <a
+              href="/calculator"
+              onClick={[Function]}
+            >
+              <button
+                className="btn btn-dark"
+                type="button"
+              >
+                <h3>
+                  Calculator
+                </h3>
+              </button>
+            </a>
+          </li>
+          <li
+            className="nav-item m-2"
+          >
+            <a
+              href="/quote"
+              onClick={[Function]}
+            >
+              <button
+                className="btn btn-dark"
+                type="button"
+              >
+                <h3>
+                  Quote
+                </h3>
+              </button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>,
+  ",",
+]
+`;
+
+exports[`Quote Renders the Quote 1`] = `
+<div
+  className="position-absolute top-50 start-50 translate-middle"
+>
+  <h1>
+    Quote
+  </h1>
+  <h5
+    className="mt-5"
+  >
+    Mathematics is not about numbers, equations, computations,
+    <br />
+    or algorithms: it is about understanding. -William Paul Thurston
+  </h5>
+</div>
+`;
