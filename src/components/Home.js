@@ -4,7 +4,7 @@ function Home() {
   return (
     <div className="position-absolute top-50 start-50 translate-middle">
       <h1>Welcome to my Calculator</h1>
-      <h5 className="mt-5 text-justify">
+      <h5 className="mt-4">
         {' '}
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Nostrum amet a maxime perferendis praesentium fugit illum

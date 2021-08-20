@@ -25,7 +25,7 @@ const Calculator = () => {
     } else if (total) {
       getForm.value = total;
     } else if (!total && !next && !operation) {
-      getForm.value = null;
+      getForm.value = '';
     }
     setObject({ total, next, operation });
   };

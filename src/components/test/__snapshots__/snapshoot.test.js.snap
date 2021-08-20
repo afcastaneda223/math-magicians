@@ -187,7 +187,7 @@ exports[`Home Renders the Home 1`] = `
     Welcome to my Calculator
   </h1>
   <h5
-    className="mt-5 text-justify"
+    className="mt-4"
   >
      
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum amet a maxime perferendis praesentium fugit illum quam saepe, omnis nisi delectus enim dolore unde nemo ab tempora quod earum minus iusto laborum! Omnis laudantium ex
@@ -304,7 +304,7 @@ exports[`Quote Renders the Quote 1`] = `
     Quote
   </h1>
   <h5
-    className="mt-5"
+    className="mt-4"
   >
     Mathematics is not about numbers, equations, computations,
     <br />
