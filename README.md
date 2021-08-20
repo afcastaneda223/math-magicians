@@ -10,7 +10,7 @@
 
 ## Live-version
 
-[Live Version](https://afcastaneda223.github.io/math-magicians/build)
+[Live Version](https://afcastaneda223.github.io/math-magicians/)
 
 
 ## Built With
