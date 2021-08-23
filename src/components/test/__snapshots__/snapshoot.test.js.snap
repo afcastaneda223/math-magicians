@@ -2,20 +2,20 @@
 
 exports[`Calculator Renders the Calculator 1`] = `
 <div
-  className="row"
+  className="row row-cols-1 row-cols-lg-2"
 >
   <div
-    className="col-4"
+    className="col text-center"
   >
     <h1>
       Lets do some math!
     </h1>
   </div>
   <div
-    className="col-8"
+    className="col"
   >
     <input
-      className="form-control fs-1 text-white text-end py-lg-4 py-sm-3"
+      className="form-control fs-1 text-white text-end py-4"
       id="InputNumber"
       type="text"
     />
@@ -23,7 +23,7 @@ exports[`Calculator Renders the Calculator 1`] = `
       className="row row-cols-4 container m-0 p-0"
     >
       <button
-        className="btn btn-light col py-lg-5 py-sm-4"
+        className="btn btn-light col py-4"
         name="AC"
         onClick={[Function]}
         type="button"
@@ -31,7 +31,7 @@ exports[`Calculator Renders the Calculator 1`] = `
         AC
       </button>
       <button
-        className="btn btn-light col py-lg-5 py-sm-4"
+        className="btn btn-light col py-4"
         name="+/-"
         onClick={[Function]}
         type="button"
@@ -39,7 +39,7 @@ exports[`Calculator Renders the Calculator 1`] = `
         +/-
       </button>
       <button
-        className="btn btn-light col py-lg-5 py-sm-4"
+        className="btn btn-light col py-4"
         name="%"
         onClick={[Function]}
         type="button"
@@ -47,7 +47,7 @@ exports[`Calculator Renders the Calculator 1`] = `
         %
       </button>
       <button
-        className="btn btn-warning col py-lg-5 py-sm-4"
+        className="btn btn-warning col py-4"
         name="÷"
         onClick={[Function]}
         type="button"
@@ -55,7 +55,7 @@ exports[`Calculator Renders the Calculator 1`] = `
         ÷
       </button>
       <button
-        className="btn btn-light col py-lg-5 py-sm-4"
+        className="btn btn-light col py-4"
         name="7"
         onClick={[Function]}
         type="button"
@@ -63,7 +63,7 @@ exports[`Calculator Renders the Calculator 1`] = `
         7
       </button>
       <button
-        className="btn btn-light col py-lg-5 py-sm-4"
+        className="btn btn-light col py-4"
         name="8"
         onClick={[Function]}
         type="button"
@@ -71,7 +71,7 @@ exports[`Calculator Renders the Calculator 1`] = `
         8
       </button>
       <button
-        className="btn btn-light col py-lg-5 py-sm-4"
+        className="btn btn-light col py-4"
         name="9"
         onClick={[Function]}
         type="button"
@@ -79,7 +79,7 @@ exports[`Calculator Renders the Calculator 1`] = `
         9
       </button>
       <button
-        className="btn btn-warning col py-lg-5 py-sm-4"
+        className="btn btn-warning col py-4"
         name="x"
         onClick={[Function]}
         type="button"
@@ -87,7 +87,7 @@ exports[`Calculator Renders the Calculator 1`] = `
         x
       </button>
       <button
-        className="btn btn-light col py-lg-5 py-sm-4"
+        className="btn btn-light col py-4"
         name="4"
         onClick={[Function]}
         type="button"
@@ -95,7 +95,7 @@ exports[`Calculator Renders the Calculator 1`] = `
         4
       </button>
       <button
-        className="btn btn-light col py-lg-5 py-sm-4"
+        className="btn btn-light col py-4"
         name="5"
         onClick={[Function]}
         type="button"
@@ -103,7 +103,7 @@ exports[`Calculator Renders the Calculator 1`] = `
         5
       </button>
       <button
-        className="btn btn-light col py-lg-5 py-sm-4"
+        className="btn btn-light col py-4"
         name="6"
         onClick={[Function]}
         type="button"
@@ -111,7 +111,7 @@ exports[`Calculator Renders the Calculator 1`] = `
         6
       </button>
       <button
-        className="btn btn-warning col py-lg-5 py-sm-4"
+        className="btn btn-warning col py-4"
         name="-"
         onClick={[Function]}
         type="button"
@@ -119,7 +119,7 @@ exports[`Calculator Renders the Calculator 1`] = `
         -
       </button>
       <button
-        className="btn btn-light col py-lg-5 py-sm-4"
+        className="btn btn-light col py-4"
         name="1"
         onClick={[Function]}
         type="button"
@@ -127,7 +127,7 @@ exports[`Calculator Renders the Calculator 1`] = `
         1
       </button>
       <button
-        className="btn btn-light col py-lg-5 py-sm-4"
+        className="btn btn-light col py-4"
         name="2"
         onClick={[Function]}
         type="button"
@@ -135,7 +135,7 @@ exports[`Calculator Renders the Calculator 1`] = `
         2
       </button>
       <button
-        className="btn btn-light col py-lg-5 py-sm-4"
+        className="btn btn-light col py-4"
         name="3"
         onClick={[Function]}
         type="button"
@@ -143,7 +143,7 @@ exports[`Calculator Renders the Calculator 1`] = `
         3
       </button>
       <button
-        className="btn btn-warning col py-lg-5 py-sm-4"
+        className="btn btn-warning col py-4"
         name="+"
         onClick={[Function]}
         type="button"
@@ -151,7 +151,7 @@ exports[`Calculator Renders the Calculator 1`] = `
         +
       </button>
       <button
-        className="btn btn-light col-6 py-lg-5 py-sm-4"
+        className="btn btn-light col-6 py-4"
         name="0"
         onClick={[Function]}
         type="button"
@@ -159,7 +159,7 @@ exports[`Calculator Renders the Calculator 1`] = `
         0
       </button>
       <button
-        className="btn btn-light col py-lg-5 py-sm-4"
+        className="btn btn-light col py-4"
         name="."
         onClick={[Function]}
         type="button"
@@ -167,7 +167,7 @@ exports[`Calculator Renders the Calculator 1`] = `
         .
       </button>
       <button
-        className="btn btn-warning col py-lg-5 py-sm-4"
+        className="btn btn-warning col py-4"
         name="="
         onClick={[Function]}
         type="button"
@@ -197,103 +197,100 @@ exports[`Home Renders the Home 1`] = `
 `;
 
 exports[`Navbar Renders the Navbar 1`] = `
-Array [
-  <nav
-    className="navbar navbar-expand-lg navbar-dark bg-dark mb-5 sticky-top"
+<nav
+  className="navbar navbar-expand-lg navbar-dark bg-dark mb-5 sticky-top"
+>
+  <div
+    className="container-fluid"
   >
-    <div
-      className="container-fluid"
+    <a
+      href="/"
+      onClick={[Function]}
     >
-      <a
-        href="/"
-        onClick={[Function]}
-      >
-        <button
-          className="btn btn-dark"
-          type="button"
-        >
-          <h1>
-            Math Magicians
-          </h1>
-        </button>
-      </a>
       <button
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-        className="navbar-toggler"
-        data-bs-target="#navbarSupportedContent"
-        data-bs-toggle="collapse"
+        className="btn btn-dark"
         type="button"
       >
-        <span
-          className="navbar-toggler-icon"
-        />
+        <h3>
+          Math Magicians
+        </h3>
       </button>
-      <div
-        className="collapse navbar-collapse"
-        id="navbarSupportedContent"
+    </a>
+    <button
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      className="navbar-toggler"
+      data-bs-target="#navbarSupportedContent"
+      data-bs-toggle="collapse"
+      type="button"
+    >
+      <span
+        className="navbar-toggler-icon"
+      />
+    </button>
+    <div
+      className="collapse navbar-collapse"
+      id="navbarSupportedContent"
+    >
+      <ul
+        className="navbar-nav me-auto mb-2 mb-lg-0 mx-auto pe-5"
       >
-        <ul
-          className="navbar-nav me-auto mb-2 mb-lg-0 mx-auto pe-5"
+        <li
+          className="nav-item m-2"
         >
-          <li
-            className="nav-item m-2"
+          <a
+            href="/"
+            onClick={[Function]}
           >
-            <a
-              href="/"
-              onClick={[Function]}
+            <button
+              className="btn btn-dark"
+              type="button"
             >
-              <button
-                className="btn btn-dark"
-                type="button"
-              >
-                <h3>
-                  Home
-                </h3>
-              </button>
-            </a>
-          </li>
-          <li
-            className="nav-item m-2"
+              <h5>
+                Home
+              </h5>
+            </button>
+          </a>
+        </li>
+        <li
+          className="nav-item m-2"
+        >
+          <a
+            href="/calculator"
+            onClick={[Function]}
           >
-            <a
-              href="/calculator"
-              onClick={[Function]}
+            <button
+              className="btn btn-dark"
+              type="button"
             >
-              <button
-                className="btn btn-dark"
-                type="button"
-              >
-                <h3>
-                  Calculator
-                </h3>
-              </button>
-            </a>
-          </li>
-          <li
-            className="nav-item m-2"
+              <h5>
+                Calculator
+              </h5>
+            </button>
+          </a>
+        </li>
+        <li
+          className="nav-item m-2"
+        >
+          <a
+            href="/quote"
+            onClick={[Function]}
           >
-            <a
-              href="/quote"
-              onClick={[Function]}
+            <button
+              className="btn btn-dark"
+              type="button"
             >
-              <button
-                className="btn btn-dark"
-                type="button"
-              >
-                <h3>
-                  Quote
-                </h3>
-              </button>
-            </a>
-          </li>
-        </ul>
-      </div>
+              <h5>
+                Quote
+              </h5>
+            </button>
+          </a>
+        </li>
+      </ul>
     </div>
-  </nav>,
-  ",",
-]
+  </div>
+</nav>
 `;
 
 exports[`Quote Renders the Quote 1`] = `

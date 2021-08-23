@@ -11,7 +11,6 @@ describe('Navbar', () => {
     const calculator = TestRenderer.create(
       <BrowserRouter>
         <Navbar />
-        ,
       </BrowserRouter>,
     ).toJSON();
     expect(calculator).toMatchSnapshot();
